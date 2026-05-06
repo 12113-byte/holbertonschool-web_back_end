@@ -24,10 +24,11 @@ function countStudents(path) {
           studentsinswe.push(student[0]);
         }
       });
-      console.log(`Number of students: ${listwithoutfirstline.length}`);
-      console.log(`Number of students in CS: ${studentsincs.length}. List: ${studentsincs.join(', ')}`);
-      console.log(`Number of students in SWE: ${studentsinswe.length}. List: ${studentsinswe.join(', ')}`);
-      resolve();
+      let outputconvertedtostring = '';
+      outputconvertedtostring += `Number of students: ${listwithoutfirstline.length}\n`;
+      outputconvertedtostring += `Number of students in CS: ${studentsincs.length}. List: ${studentsincs.join(', ')}\n`;
+      outputconvertedtostring += `Number of students in SWE: ${studentsinswe.length}. List: ${studentsinswe.join(', ')}\n`;
+      resolve(outputconvertedtostring);
     });
   });
 }
