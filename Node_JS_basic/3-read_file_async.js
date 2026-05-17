@@ -27,7 +27,7 @@ function countStudents(path) {
       let outputconvertedtostring = '';
       outputconvertedtostring += `Number of students: ${listwithoutfirstline.length}\n`;
       outputconvertedtostring += `Number of students in CS: ${studentsincs.length}. List: ${studentsincs.join(', ')}\n`;
-      outputconvertedtostring += `Number of students in SWE: ${studentsinswe.length}. List: ${studentsinswe.join(', ')}\n`;
+      outputconvertedtostring += `Number of students in SWE: ${studentsinswe.length}. List: ${studentsinswe.join(', ')}`;
       resolve(outputconvertedtostring);
     });
   });
